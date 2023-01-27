@@ -1,7 +1,8 @@
 console.log("formValidation.js loaded");
 
 /**
- * Name: Zeedhan Azim
+ * Name: Zeedhan 
+ * ID: 100790643
  * date: 2023-01-27
  * program name: form-validation.js
  * purpose: provides functionality and validation for html file and display errors to user
