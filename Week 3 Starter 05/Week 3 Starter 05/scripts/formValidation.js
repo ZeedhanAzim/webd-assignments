@@ -1,9 +1,10 @@
 console.log("formValidation.js loaded");
 
 /**
- * Validate the email address
- * @param {string} email    the email address to validate
- * @returns {boolean}        to indicate if the email is valid
+ * Name: Zeedhan Azim
+ * date: 2023-01-27
+ * program name: form-validation.js
+ * purpose: provides functionality and validation for html file and display errors to user
  */
 
 //error messages and error color
