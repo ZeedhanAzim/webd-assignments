@@ -1,5 +1,7 @@
 /*
 Name: Zeedhan Azim
+student ID: 100790643
+date: 2023-02-03
 program name: animations
 purpose: work with animating parts of a webpage
 */

@@ -1,5 +1,7 @@
 /*
 Name: Zeedhan Azim
+student ID: 100790643
+date: 2023-02-03
 program name: arraysAndCallbacks
 purpose: work with different types of arrays in jquery
 */

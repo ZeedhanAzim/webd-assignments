@@ -1,5 +1,7 @@
 /*
 Name: Zeedhan Azim
+student ID: 100790643
+date: 2023-02-03
 program name: selectors
 purpose: work with selecting parts of a webpage and change it's css properties
 */
