@@ -1,5 +1,6 @@
 console.log('selectors.js loaded')
 
+//change background colour
 function highlight(element) {
     element.css("background-color", '#fcf30040')
 }
@@ -24,6 +25,7 @@ function traversingTheDOM() {
 
 }
 
+
 function filtering() {
     $('#list').find('li').filter(':even').css('background-color', '#3/a86ff')
     $('#list').find('li').filter(function (index) {
@@ -31,6 +33,7 @@ function filtering() {
     }).css("background-color", "red");
 }
 
+//replaces text
 function addingReplactingRemoving() {
     $("ul ul:first").append($("<li>lasst item of the first sub list</li>"));
 

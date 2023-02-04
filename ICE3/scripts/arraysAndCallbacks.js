@@ -24,6 +24,7 @@ console.log('friday value array: ${p}');
 function square(x) {
     return x * x;
 }
+
 let r = new Array(1, 33, 22, 5);
 let newR = r.map(function (value) {
     return square(value);
