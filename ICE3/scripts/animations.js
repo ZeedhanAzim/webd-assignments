@@ -1,3 +1,8 @@
+/*
+Name: Zeedhan Azim
+program name: animations
+purpose: work with animating parts of a webpage
+*/
 console.log("animations.js loaded");
 
 //fade boxes

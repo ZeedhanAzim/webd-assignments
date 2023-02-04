@@ -1,4 +1,8 @@
-
+/*
+Name: Zeedhan Azim
+program name: arraysAndCallbacks
+purpose: work with different types of arrays in jquery
+*/
 //literal array
 let a = [1, 2, 3, 4]
 

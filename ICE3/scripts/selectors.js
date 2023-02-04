@@ -1,3 +1,8 @@
+/*
+Name: Zeedhan Azim
+program name: selectors
+purpose: work with selecting parts of a webpage and change it's css properties
+*/
 console.log('selectors.js loaded')
 
 //change background colour
