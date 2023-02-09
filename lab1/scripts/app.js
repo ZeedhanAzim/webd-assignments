@@ -44,11 +44,22 @@ function serviceText() {
 }
 
 //text for About me page
-let aboutText = document.write(<p>
-    Welcome to my website! I'm Zeedhan Azim, an I currently attend Durham College, working towards getting my
-    Computer Programming diploma. In my free time, I typically play video games Like Pokemon and Yugioh Master Duel,
-    listening to podcasts and videos related to learning about Japan and it's culture,
-</p>)
+function productText() {
+
+}
+
+
+//text for About me page
+function aboutText() {
+    document.write(
+        "<p>" +
+        "Welcome to my website! I'm Zeedhan Azim, an I currently attend Durham College, working towards getting my Computer Programming diploma. " +
+        "In my free time, I typically play video games, listening to podcasts and videos related to learning about Japan and it's culture, and watching media analysis videos." +
+        "</p>"
+    );
+}
+
+
 
 //change the products page link text to be called Interest
 function changeLinkText() {
