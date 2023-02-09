@@ -2,7 +2,7 @@
 * Class to create new user
  */
 export class User {
-
+    //1:17:00
     /**
      * User
      * @param {string} firstName
@@ -24,7 +24,7 @@ export class User {
      * @returns {string}
      */
     displayUser() {
-         return `Name: ${this.firstName}${this.lastName}
+        return `Name: ${this.firstName}${this.lastName}
          Username: ${this.username}
          Email: ${this.email}
          Password: ${this.password}`
