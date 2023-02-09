@@ -1,0 +1,31 @@
+body {
+    background-color: #F0EEED;
+}
+
+
+.navbar {
+    background-color: #251d5b;
+}
+
+.navbar a {
+    color: #F5F5F5;
+}
+
+.navbar a:hover {
+    color: #8605cb;
+}
+
+h1,
+h2,
+h3 {
+    color: #5C038C;
+}
+
+p,
+li {
+    color: #F5F5F5;
+}
+
+a {
+    color: #F5F5F5;
+}

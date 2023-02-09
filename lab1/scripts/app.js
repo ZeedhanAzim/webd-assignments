@@ -34,17 +34,14 @@ if (submitButton) {
 }
 
 //text for product page
-let productText = document.write(<p>
-
-</p>)
-
-let serviceText = document.write(<p>
-    My key skills include:
-    <li>
-        <ul>Team collaboration</ul>
-    </li>
-</p>)
-
+function serviceText() {
+    document.write("<p>My key skills and traits include:<li>");
+    document.write("<ul>Programming in multiple languages</ul>");
+    document.write("<ul>Database design, management and manipulation</ul>");
+    document.write("<ul>Eager to learn new tech and approaches to programming</ul>");
+    document.write("<ul>Ability to work independently and in a team</ul>");
+    document.write("</li></p>");
+}
 
 //text for About me page
 let aboutText = document.write(<p>
@@ -53,3 +50,7 @@ let aboutText = document.write(<p>
     listening to podcasts and videos related to learning about Japan and it's culture,
 </p>)
 
+//change the products page link text to be called Interest
+function changeLinkText() {
+
+}
