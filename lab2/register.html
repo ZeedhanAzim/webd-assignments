@@ -14,6 +14,45 @@
 
 <body>
 
+    <!--form from bootstrap: https://getbootstrap.com/docs/4.0/components/forms/-->
+    <form>
+        <h2>Register</h2>
+        <h4>Create your own account. It's free and only takes a minute.</h4>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="firstNameInput">First Name</label>
+                <input type="text" class="form-control" id="firstNameInput" placeholder="First Name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lastNameInput">Last Name</label>
+                <input type="text" class="form-control" id="lastNameInput" placeholder="Last Name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="emailInput">Email</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="passwordInput">Password</label>
+            <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="confirmPasswordInput">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPasswordInput" placeholder="Confirm Password">
+        </div>
+        <button type="submit" class="btn btn-primary" id="btnSubmit">Register</button>
+    </form>
+
+
+
+
+
+    <!--insert js file and create bottom navbar-->
+    <script src="./scripts/app.js"></script>
+    <script>
+        createBottomNav()
+        console.log("working")
+    </script>
 </body>
 
 </html>

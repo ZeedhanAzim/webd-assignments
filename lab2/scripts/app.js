@@ -1,7 +1,7 @@
 /*
 Name: Zeedhan Azim
 ID: 100790643
-Date Completed: 2023-02-08
+Date Completed: 2023-
 */
 
 
@@ -26,7 +26,7 @@ function timedRedirect(e) {
 }
 
 //make variable for email address
-let submitButton = document.getElementById('submit-button');
+let submitButton = document.getElementsByClassName('btn-primary')[0];
 
 //when user submits information...
 if (submitButton) {
@@ -64,4 +64,40 @@ function aboutText() {
 //change the products page link text to be called Interest
 function changeLinkText() {
 
+}
+
+//function to create bottom navbar
+function createBottomNav() {
+    let bottomNav = document.createElement('nav');
+    bottomNav.className = 'footer-nav';
+
+    let bottomNavP = document.createElement('p');
+    let thisYear = new Date().getFullYear();
+    bottomNavP.innerHTML = `&copy; ${thisYear}`;
+    bottomNav.appendChild(bottomNavP);
+
+    let body = document.getElementsByTagName('body')[0];
+    body.appendChild(bottomNav);
+}
+
+//register validation
+function validateRegister() {
+    // get values
+    let firstName = $("#firstNameInput").val();
+    let lastName = $("#lastNameInput").val();
+    let email = $("#emailInput").val();
+    let password = $("#passwordInput").val();
+    let confirmPassword = $("#confirmPasswordInput").val();
+    let buttonPress = $("#btnSubmit").val;
+
+    //check if fields are all filled
+    if (!firstName || !lastName || !email || !password || !confirmPassword) {
+        alert("please fill out all fields")
+        return false;
+    }
+
+}
+
+//perform function when button is clicked
+$('#btnSubmit').click(function (event) {
 }
