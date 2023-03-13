@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!--links to css and bootstrap files-->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!--insert js file-->
+    <script src="./scripts/app.js"></script>
+</head>
+
+<body>
+    <!--top navbar-->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Login<span class="sr-only">(current)</span></a>
+                </li>
+                <!-- insert div to disply username when logged in-->
+                <div id="userNameDisplay"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--form from bootstrap: https://getbootstrap.com/docs/4.0/components/forms/-->
+    <form id="loginForm">
+        <!-- insert div for potential error message -->
+        <script src="./scripts/app.js">newDiv()</script>
+        <div class="form-group">
+            <label for="loginEmail">Email address</label>
+            <input type="text" class="form-control" id="usernameInput" placeholder="Enter your username">
+        </div>
+        <!-- insert div for potential error message -->
+        <script src="./scripts/app.js">newDiv()</script>
+        <div class="form-group">
+            <label for="loginPassword">Password</label>
+            <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+        </div>
+        <button onclick='validateLogin(<script>$("#loginForm")</script>)' type="submit" class="btn
+            btn-primary">Login</button>
+    </form>
+
+    <!--insert js file and create bottom navbar-->
+
+    createBottomNav();
+    console.log("working");
+    </script>
+</body>
+
+</html>
