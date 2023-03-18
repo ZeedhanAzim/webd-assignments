@@ -9,6 +9,7 @@ app.engine('handlebars', exphbs.engine({ defaultlayout: 'main' }))
 app.set('view engine', 'handlebars');
 app.set('view', './views')
 
+//engage in middleware
 app.use((req, res, next) => {
     console.log(`URL: ${req.url}`);
     req.myName = 'Zeedhan';

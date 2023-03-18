@@ -1,6 +1,17 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "express": "^4.18.2"
-  }
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.2",
+    "nodemon": "^2.0.21"
+  },
+  "name": "ice8_05",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zeedhan Azim",
+  "license": "ISC",
+  "description": ""
 }
