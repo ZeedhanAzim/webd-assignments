@@ -27,6 +27,16 @@ app.get("/", (req, res) => {
     res.send('this is the about page for the Express app ');
 });
 
+//get second handlebar
+app.get("/", (req, res) => {
+    res.render('new_home');
+});
+
+app.get("/", (req, res) => {
+    res.send('this is the new about page for the Express app ');
+});
+
+
 app.listen(PORT, () => {
     console.log(`server started on port ${PORT}`);
 });
