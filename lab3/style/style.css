@@ -7,9 +7,9 @@ body {
     background-color: #251d5b;
 }
 
-/* .navbar a {
-    color: #F5F5F5;
-} */
+.navbar a {
+    color: #EDDEDE;
+}
 
 .navbar a:hover {
     color: #8605cb;
@@ -21,11 +21,15 @@ h3 {
     color: #5C038C;
 }
 
-p,
 li {
     color: #F5F5F5;
 }
 
 a {
     color: #F5F5F5;
+}
+
+.card-blog {
+    display: flex;
+    justify-content: space-evenly;
 }

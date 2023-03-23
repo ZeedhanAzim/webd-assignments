@@ -1,17 +1,18 @@
 /*
 Name: Zeedhan Azim
-ID: 100790643
-Date: 2023-03-23
+ID: 100890643
+Date Completed: 2023-03-23
 */
+console.log("js working");
 
-const MAX_BLOG_POSTS = 20;
 
 const makePosts = () => {
-    for (let i = 1; i < MAX_BLOG_POSTS; i++) {
+    //for statement to create 20 divs that hold cards
+    for (let i = 1; i < 20; i++) {
 
         let id_no = i;
 
-        let card = $('<div class="card blog" style="display: flex; width: 18rem;"></div>').attr('id', 'card-' + id_no).appendTo($('.blog-column'));
+        let card = $('<div class="card blog" style="width: 18rem; display: flex; color: #FFFFFF; background-color: #191970;"></div>').attr('id', 'card-' + id_no).appendTo($('.blog-column'));
 
         let body = $('<div class="card-body blog"></div>').attr('id', 'card-body-' + id_no).appendTo(card);
 
@@ -32,44 +33,45 @@ const getPics = (() => {
 
     PIXABAY_KEY = '34274968-f1a968a0d92dd12785b405c6c';
     PIXABAY_URL = 'https://pixabay.com/api/?key=<KEY>&q=dramatic+landscape&image_type=photo&per_page=30';
+
+
     const url = PIXABAY_URL.replace('<KEY>', PIXABAY_KEY);
+    const placeholder_url = "https://jsonplaceholder.typicode.com/posts";
 
-    PLACEHOLDER_URL = 'https://jsonplaceholder.typicode.com/posts';
-    const placeholder_url = PLACEHOLDER_URL.replace('<KEY>', PLACEHOLDER_KEY);
-
-    //gets pictures from pixabay
+    //use to get pictures for lab 3
     console.log(`URL: ${url}`);
     fetch(url)
         .then((response) => {
             return response.json();
         })
-        //get image
         .then((data) => {
             console.log(data)
-            for (let j = 0; j < 20; j++) {
+            for (let j = 1; j < 20; j++) {
                 let picSrc = data['hits'][j]['webformatURL'];
                 let altText = data['hits'][j]['tags'];
                 console.log(`Pic: ${picSrc} Alt: ${altText}`);
                 $('#img-' + j).attr('src', picSrc).attr('alt', altText);
 
-                var newRequest = new XMLHttpRequest();
-                newRequest.open('GET', placeholder_url);
-                newRequest.onload = function () {
-                    var data = JSON.parse(newRequest.responseText);
-                    userIdString = "<p>User ID: " + data[j].userId + "</p>";
-                    idString = "<p>ID: " + data[j].id + "</p>";
-                    titleString = "<p>Title: " + data[j].title + "</p>";
-                    bodyString = "<p>Body: " + data[j].id + "</p>";
-                }
             }
         })
         .catch((error) => console.log(error));
 
+    //get card text information
+    fetch(placeholder_url)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            for (let j = 1; j < 20; j++) {
+                let userId = data[userId][j];
+                let id = data[id][j];
+                let title = data[title][j];
+                let body = data[body][j];
 
-
-}
-
+            }
+        })
 });
 
+//use functions
 makePosts();
 getPics();
