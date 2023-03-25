@@ -30,6 +30,9 @@ a {
 }
 
 .card-blog {
+    width: 18rem;
     display: flex;
     justify-content: space-evenly;
+    color: #FFFFFF;
+    background-color: #160B62;
 }

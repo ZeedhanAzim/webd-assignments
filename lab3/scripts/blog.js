@@ -12,9 +12,9 @@ const makePosts = () => {
 
         let id_no = i;
 
-        let card = $('<div class="card blog" style="width: 18rem; display: flex; color: #FFFFFF; background-color: #191970;"></div>').attr('id', 'card-' + id_no).appendTo($('.blog-column'));
+        let card = $('<div class="card-blog" ></div>').attr('id', 'card-' + id_no).appendTo($('.blog-column'));
 
-        let body = $('<div class="card-body blog"></div>').attr('id', 'card-body-' + id_no).appendTo(card);
+        let body = $('<div class="card-body blog" style="display: flex;"></div>').attr('id', 'card-body-' + id_no).appendTo(card);
 
         let title = $('<h5 class="card-title blog"></h5>').attr('id', 'card-title-' + id_no).appendTo(body);
 
@@ -56,20 +56,31 @@ const getPics = (() => {
         })
         .catch((error) => console.log(error));
 
-    //get card text information
-    fetch(placeholder_url)
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            for (let j = 1; j < 20; j++) {
-                let userId = data[userId][j];
-                let id = data[id][j];
-                let title = data[title][j];
-                let body = data[body][j];
+    var newRequest = new XMLHttpRequest();
+    newRequest.open('GET', placeholder_url);
+    newRequest.onload = function () {
+        var data = JSON.parse(newRequest.responseText);
+        userIdString = "<p>User ID: " + data[i].userId + "</p>";
+        idString = "<p>ID: " + data[i].id + "</p>";
+        titleString = "<p>Title: " + data[i].title + "</p>";
+        bodyString = "<p>Body: " + data[i].id + "</p>";
+    }
 
-            }
-        })
+
+    //get card text information
+    // fetch(placeholder_url)
+    //     .then((response) => {
+    //         return response.json();
+    //     })
+    //     .then((data) => {
+    //         for (let j = 1; j < 20; j++) {
+    //             let userId = data[userId][j];
+    //             let id = data[id][j];
+    //             let title = data[title][j];
+    //             let body = data[body][j];
+
+    //         }
+    //     })
 });
 
 //use functions
