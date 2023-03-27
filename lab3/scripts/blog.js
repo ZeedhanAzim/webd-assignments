@@ -56,6 +56,7 @@ const getPics = (() => {
         })
         .catch((error) => console.log(error));
 
+    //get card text information with XMLHttpRequest
     var newRequest = new XMLHttpRequest();
     newRequest.open('GET', placeholder_url);
     newRequest.onload = function () {
@@ -67,7 +68,7 @@ const getPics = (() => {
     }
 
 
-    //get card text information
+    //get card text information with fetch
     // fetch(placeholder_url)
     //     .then((response) => {
     //         return response.json();
