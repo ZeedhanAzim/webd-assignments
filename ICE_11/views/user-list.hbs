@@ -1,0 +1,8 @@
+{{#each users}}
+<div class="card card-body mb-3">
+    <h4>{{fullName}}</h4>
+    <p>{{email}}</p>
+    {{!-- <p>{{_id}}</p> --}}
+    <a class="btn btn-dark btn-block" href="edit-user/{{_id}}">Edit User</a>
+</div>
+{{/each}}
