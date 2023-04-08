@@ -88,9 +88,38 @@ const getAllUsers = (req, res) => {
         })
 }
 
+const editUser = (req, res) => {
+    let id = req.params.id
+    User.findOne({ _id: id }).lean()
+        .then((user) => {
+            res.render('user-edit', {
+                user: user,
+                id: id
+            });
+        })
+}
+//async important
+const updateUser = async (req, res) => {
+    const update = { fullName: req.body.fullName, email: req.body.email };
+    const id = req.params.id;
+    const filter = { _id: id };
+    let doc = await User.findOneAndUpdate(filter, update, { new: true });
+    res.redirect('./user-list');
+}
+
+const deleteUser = async (req, res) => {
+    const id = req.params.id;
+    const filter = { _id: id };
+    let deletedCount = await User.deleteOne(filter);
+    res.redirect('./user-list')
+}
+
 module.exports = {
     homeView,
     formView,
     formSubmission,
-    getAllUsers
+    getAllUsers,
+    editUser,
+    updateUser,
+    deleteUser
 };
