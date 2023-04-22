@@ -1,0 +1,36 @@
+{{!--
+Name: Zeedhan Azim
+ID: 100790643
+date: 2023-04-21 --}}
+<form method="post" action="/submit">
+    <div class="form-group">
+        {{!-- home zoo input --}}
+        <label for="homeZoo">Home Zoo</label>
+        <input type="text" class="form-control" id="homeZoo" name="homeZoo" placeholder="Enter home zoo">
+    </div>
+    {{!-- scientific name input --}}
+    <div class="form-group">
+        <label for="scientificName">Scientific Name</label>
+        <input type="text" id="scientificName" name="scientificName" placeholder="Enter scientific name">
+        {{!-- common name input --}}
+        <label for="commonName">Common Name</label>
+        <input type="text" id="commonName" name="commonName" placeholder="Enter common name">
+        {{!-- given name input --}}
+        <label for="givenName">Given Name</label>
+        <input type="text" id="givenName" name="givenName" placeholder="Enter given name">
+        {{!-- gender buttons --}}
+        <label for="gender">Gender</label><br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        {{!-- birth date input --}}
+        <label for="birthDate">Date of Birth</label>
+        <input type="date" id="dob" name="dob">
+        {{!-- current age input --}}
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter age">
+        {{!-- submit and reset --}}
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+</form>
